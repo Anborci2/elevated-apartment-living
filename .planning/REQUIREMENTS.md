@@ -80,41 +80,42 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
-| FOUND-04 | Phase 1 | Pending |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
-| CONT-05 | Phase 2 | Pending |
-| FORM-01 | Phase 3 | Pending |
-| FORM-02 | Phase 3 | Pending |
-| FORM-03 | Phase 3 | Pending |
-| FORM-04 | Phase 3 | Pending |
-| FORM-05 | Phase 3 | Pending |
-| FORM-06 | Phase 3 | Pending |
-| FORM-07 | Phase 3 | Pending |
-| FORM-08 | Phase 3 | Pending |
-| FORM-09 | Phase 3 | Pending |
-| FORM-10 | Phase 3 | Pending |
-| FORM-11 | Phase 3 | Pending |
-| FORM-12 | Phase 3 | Pending |
-| EMAIL-01 | Phase 3 | Pending |
-| EMAIL-02 | Phase 3 | Pending |
-| EMAIL-03 | Phase 3 | Pending |
-| EMAIL-04 | Phase 3 | Pending |
-| EMAIL-05 | Phase 3 | Pending |
-| DEPLOY-01 | Phase 4 | Pending |
-| DEPLOY-02 | Phase 4 | Pending |
-| DEPLOY-03 | Phase 4 | Pending |
+| FOUND-01 | Phase 1: Foundation | Pending |
+| FOUND-02 | Phase 1: Foundation | Pending |
+| FOUND-03 | Phase 1: Foundation | Pending |
+| FOUND-04 | Phase 1: Foundation | Pending |
+| CONT-01 | Phase 2: Content Sections | Pending |
+| CONT-02 | Phase 2: Content Sections | Pending |
+| CONT-03 | Phase 2: Content Sections | Pending |
+| CONT-04 | Phase 2: Content Sections | Pending |
+| CONT-05 | Phase 2: Content Sections | Pending |
+| FORM-01 | Phase 3: Lead Form + Email | Pending |
+| FORM-02 | Phase 3: Lead Form + Email | Pending |
+| FORM-03 | Phase 3: Lead Form + Email | Pending |
+| FORM-04 | Phase 3: Lead Form + Email | Pending |
+| FORM-05 | Phase 3: Lead Form + Email | Pending |
+| FORM-06 | Phase 3: Lead Form + Email | Pending |
+| FORM-07 | Phase 3: Lead Form + Email | Pending |
+| FORM-08 | Phase 3: Lead Form + Email | Pending |
+| FORM-09 | Phase 3: Lead Form + Email | Pending |
+| FORM-10 | Phase 3: Lead Form + Email | Pending |
+| FORM-11 | Phase 3: Lead Form + Email | Pending |
+| FORM-12 | Phase 3: Lead Form + Email | Pending |
+| EMAIL-01 | Phase 3: Lead Form + Email | Pending |
+| EMAIL-02 | Phase 3: Lead Form + Email | Pending |
+| EMAIL-03 | Phase 3: Lead Form + Email | Pending |
+| EMAIL-04 | Phase 3: Lead Form + Email | Pending |
+| EMAIL-05 | Phase 3: Lead Form + Email | Pending |
+| DEPLOY-01 | Phase 4: Polish + Deploy | Pending |
+| DEPLOY-02 | Phase 4: Polish + Deploy | Pending |
+| DEPLOY-03 | Phase 4: Polish + Deploy | Pending |
 
 **Coverage:**
 - v1 requirements: 28 total
 - Mapped to phases: 28
 - Unmapped: 0 ✓
+- Roadmap file: [ROADMAP.md](./ROADMAP.md)
 
 ---
 *Requirements defined: 2026-04-18*
-*Last updated: 2026-04-18 after initial definition*
+*Last updated: 2026-04-18 — traceability confirmed against ROADMAP.md*
