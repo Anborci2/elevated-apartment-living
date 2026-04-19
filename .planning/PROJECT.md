@@ -17,11 +17,16 @@ A prospective renter lands on the site, is impressed by the brand and Alan's exp
 - [x] **FOUND-03**: Typography set with Playfair Display + Inter via next/font/google — Validated in Phase 1: Foundation
 - [x] **FOUND-04**: Responsive Header + Footer layout shell in place — Validated in Phase 1: Foundation
 
+### Validated
+
+- [x] **CONT-01**: Hero section with "Find Your Perfect Denver Home" headline and #lead-form CTA — Validated in Phase 2: Content Sections
+- [x] **CONT-02**: Photo gallery with 6 Unsplash placeholder apartment images via next/image — Validated in Phase 2: Content Sections
+- [x] **CONT-03**: "How It Works" 3-step section with gold numbered steps — Validated in Phase 2: Content Sections
+- [x] **CONT-04**: "Our Story" section about Alan's 5 years of Denver experience — Validated in Phase 2: Content Sections
+- [x] **CONT-05**: Footer with business name, alan@elevatedapartmentlocating.com, copyright — Validated in Phase 2: Content Sections
+
 ### Active
 
-- [ ] Hero section with compelling headline and call-to-action
-- [ ] Photo gallery showcasing Denver apartment-style imagery
-- [ ] "Our Story" section about Alan and the Elevated service
 - [ ] Lead capture form emailed to alan@elevatedapartmentlocating.com
 - [ ] Form collects: first name, last name, email, phone, income/credit range, bedroom preference, lease term, location preference
 
@@ -59,7 +64,7 @@ A prospective renter lands on the site, is impressed by the brand and Alan's exp
 ---
 ## Current State
 
-Phase 1 complete — Next.js 14 App Router scaffold with luxury dark Tailwind theme, Playfair Display + Inter typography, and responsive Header + Footer shell. Ready for Phase 2: Content Sections.
+Phase 2 complete — All five static content sections built and wired: Hero (full-bleed Unsplash bg + dark overlay), Gallery (6 images, responsive grid), How It Works (3 numbered steps), Our Story (Alan's copy), Footer (real content). Build verified clean. Ready for Phase 3: Lead Form + Email.
 
 ---
-*Last updated: 2026-04-19 — Phase 1: Foundation complete*
+*Last updated: 2026-04-19 — Phase 2: Content Sections complete*
