@@ -12,7 +12,10 @@ A prospective renter lands on the site, is impressed by the brand and Alan's exp
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] **FOUND-01**: Next.js 14 App Router project scaffolded — Validated in Phase 1: Foundation
+- [x] **FOUND-02**: Luxury dark color palette configured (navy #0D1B2A, black #0A0B0D, gold #C9A96E) — Validated in Phase 1: Foundation
+- [x] **FOUND-03**: Typography set with Playfair Display + Inter via next/font/google — Validated in Phase 1: Foundation
+- [x] **FOUND-04**: Responsive Header + Footer layout shell in place — Validated in Phase 1: Foundation
 
 ### Active
 
@@ -54,4 +57,9 @@ A prospective renter lands on the site, is impressed by the brand and Alan's exp
 | Placeholder photos initially | Real AMLI photos require sourcing; don't block launch | — Pending |
 
 ---
-*Last updated: 2026-04-18 after initialization*
+## Current State
+
+Phase 1 complete — Next.js 14 App Router scaffold with luxury dark Tailwind theme, Playfair Display + Inter typography, and responsive Header + Footer shell. Ready for Phase 2: Content Sections.
+
+---
+*Last updated: 2026-04-19 — Phase 1: Foundation complete*
