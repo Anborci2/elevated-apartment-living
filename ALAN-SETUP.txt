@@ -14,8 +14,8 @@ QUICK REFERENCE — WHAT EACH STEP DOES
   Step 3  RESEND       — Delivers lead emails to your inbox the moment
                          someone submits the contact form. Free.
 
-  Step 4  SANITY       — Your private dashboard to approve reviews
-                         before they appear on your site. Free.
+  Step 4  SANITY       — Your private dashboard to edit site content and
+                         approve reviews. Add Blair as editor just in case.
 
   Step 5  GOOGLE       — Puts you on Google Maps and feeds reviews
   BUSINESS PROFILE       to your site nightly. Free (may require
@@ -156,6 +156,11 @@ WHAT IT DOES FOR YOU:
 5. Choose the free plan
 6. On the project dashboard you'll see a "Project ID"
    It looks like: abc123de
+7. Go to: Settings > Members > Invite member
+8. Invite: abdalziel@gmail.com — set role to Editor
+   (This lets Blair step in and make edits on your
+   behalf if you ever need help, without changing
+   who owns or controls the account — it stays yours.)
 
 SEND BLAIR: Your Sanity Project ID
 
