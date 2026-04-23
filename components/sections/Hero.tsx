@@ -1,40 +1,50 @@
 import Image from 'next/image'
+import { ContactButton } from '@/components/ui/ContactButton'
+import { getSiteSettings } from '@/lib/sanity/queries'
+import { urlFor } from '@/lib/sanity/image'
 
-export function Hero() {
+const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80'
+const FALLBACK_HEADLINE = 'Find Your Perfect Denver Home'
+const FALLBACK_SUBHEADLINE = "Denver's apartment locating expert — tell us what you need, and we'll find it."
+
+export async function Hero() {
+  const settings = await getSiteSettings().catch(() => null)
+
+  const headline = settings?.heroHeadline ?? FALLBACK_HEADLINE
+  const subheadline = settings?.heroSubheadline ?? FALLBACK_SUBHEADLINE
+  const bgSrc = settings?.heroImage
+    ? urlFor(settings.heroImage).width(1920).quality(90).url()
+    : FALLBACK_IMAGE
+
   return (
     <section
       aria-label="Hero"
       className="relative min-h-screen flex items-center justify-center bg-luxury-black"
     >
-      {/* Layer 1: Background image */}
       <div className="absolute inset-0">
         <Image
           fill
           priority
           quality={90}
-          src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80"
+          src={bgSrc}
           alt=""
           sizes="100vw"
           className="object-cover object-center"
         />
       </div>
 
-      {/* Layer 2: Dark overlay */}
       <div className="absolute inset-0 bg-luxury-black/60" aria-hidden="true" />
 
-      {/* Layer 3: Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="font-playfair text-display-mobile lg:text-display font-bold text-luxury-text-primary tracking-tight leading-tight">
-          Find Your Perfect Denver Home
+          {headline}
         </h1>
         <p className="mt-4 font-inter text-base lg:text-lg text-luxury-text-secondary max-w-2xl mx-auto leading-relaxed">
-          Denver&apos;s apartment locating expert — tell us what you need, and we&apos;ll find it.
+          {subheadline}
         </p>
-        <a href="#lead-form" className="inline-block mt-8">
-          <span className="inline-block border border-luxury-gold text-luxury-gold bg-transparent px-8 py-3 font-inter text-sm font-semibold tracking-widest uppercase rounded-none transition-all duration-200 hover:bg-luxury-gold hover:text-luxury-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-luxury-gold focus-visible:outline-offset-2">
-            Find My Apartment
-          </span>
-        </a>
+        <div className="mt-8">
+          <ContactButton />
+        </div>
       </div>
     </section>
   )
