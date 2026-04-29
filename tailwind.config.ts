@@ -17,6 +17,7 @@ const config: Config = {
           'text-primary': '#F5F0E8',
           'text-secondary': '#A8A29E',
           destructive: '#EF4444',
+          'navy-mid': '#1B3A5F',
         },
       },
       fontFamily: {
@@ -33,6 +34,15 @@ const config: Config = {
       },
       maxWidth: {
         content: '1280px',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 40s linear infinite',
       },
     },
   },

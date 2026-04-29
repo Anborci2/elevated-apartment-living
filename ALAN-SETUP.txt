@@ -88,6 +88,7 @@ WHAT IT DOES FOR YOU:
 
 SEND BLAIR: Your GitHub username
 
+username: anborci2
 
 -----------------------------------------------------
 STEP 2 — VERCEL ACCOUNT
@@ -107,6 +108,7 @@ WHAT IT DOES FOR YOU:
 
 SEND BLAIR: Confirmation that your Vercel account is created
 
+done
 
 -----------------------------------------------------
 STEP 3 — RESEND ACCOUNT
@@ -135,6 +137,8 @@ SEND BLAIR:
   - Your Resend API key (re_...)
   - The email address you want leads delivered to
 
+api key = re_KCn9TjRm_Ett5J73zm7Uo6bgszHcQTkzk
+email = alan@elevatedapartmentlocating.com
 
 -----------------------------------------------------
 STEP 4 — SANITY ACCOUNT
@@ -164,6 +168,7 @@ WHAT IT DOES FOR YOU:
 
 SEND BLAIR: Your Sanity Project ID
 
+ID = jmh96ece
 
 -----------------------------------------------------
 STEP 5 — GOOGLE BUSINESS PROFILE
@@ -223,6 +228,11 @@ WHAT IT DOES FOR YOU:
 
 SEND BLAIR: Your Google Cloud API Key
 
+google maps platform api key = AIzaSyDTDs6UEui1YgWT9jj1LVAwt2dykBrcAqY
+
+places api key = AIzaSyATfe9HBB9dfMVI2IJO8kLo8z2uvgohlDA
+
+Places ID = 
 
 -----------------------------------------------------
 STEP 7 — DOMAIN ACCESS

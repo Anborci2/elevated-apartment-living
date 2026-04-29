@@ -6,7 +6,7 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Alan Does the Search',
+    title: 'We Do the Search',
     body: 'We tap into our Denver network to find apartments that actually fit.',
   },
   {
