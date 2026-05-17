@@ -4,5 +4,6 @@
       "path": "/api/reviews/sync",
       "schedule": "0 3 * * *"
     }
-  ]
+  ],
+  "installCommand": "npm install --legacy-peer-deps"
 }
