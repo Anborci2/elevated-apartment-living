@@ -98,7 +98,15 @@ export function ContactModal() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     const errs = validate()
-    if (Object.keys(errs).length > 0) { setErrors(errs); return }
+    if (Object.keys(errs).length > 0) {
+      setErrors(errs)
+      // Scroll to first error so user sees what's missing
+      setTimeout(() => {
+        const firstError = panelRef.current?.querySelector('[data-error]')
+        firstError?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }, 50)
+      return
+    }
     setStatus('loading')
     try {
       const res = await fetch('/api/contact', {
@@ -108,6 +116,8 @@ export function ContactModal() {
       })
       if (!res.ok) throw new Error()
       setStatus('success')
+      // Scroll to top of panel to show success message
+      panelRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
     } catch {
       setStatus('error')
     }
@@ -189,7 +199,7 @@ export function ContactModal() {
                       onChange={e => setForm(f => ({ ...f, [field]: e.target.value }))}
                       className={inputCls}
                     />
-                    {errors[field] && <p className="font-inter text-xs text-red-400 mt-1">{errors[field]}</p>}
+                    {errors[field] && <p data-error className="font-inter text-xs text-red-400 mt-1">{errors[field]}</p>}
                   </div>
                 ))}
                 {(['email', 'phone'] as const).map((field) => (
@@ -203,7 +213,7 @@ export function ContactModal() {
                       onChange={e => setForm(f => ({ ...f, [field]: e.target.value }))}
                       className={inputCls}
                     />
-                    {errors[field] && <p className="font-inter text-xs text-red-400 mt-1">{errors[field]}</p>}
+                    {errors[field] && <p data-error className="font-inter text-xs text-red-400 mt-1">{errors[field]}</p>}
                   </div>
                 ))}
               </div>
@@ -222,7 +232,7 @@ export function ContactModal() {
                   >{opt}</button>
                 ))}
               </div>
-              {errors.bedrooms && <p className="font-inter text-xs text-red-400 mt-2">{errors.bedrooms}</p>}
+              {errors.bedrooms && <p data-error className="font-inter text-xs text-red-400 mt-2">{errors.bedrooms}</p>}
             </fieldset>
 
             {/* Timeline */}
@@ -238,7 +248,7 @@ export function ContactModal() {
                   >{opt}</button>
                 ))}
               </div>
-              {errors.timeline && <p className="font-inter text-xs text-red-400 mt-2">{errors.timeline}</p>}
+              {errors.timeline && <p data-error className="font-inter text-xs text-red-400 mt-2">{errors.timeline}</p>}
             </fieldset>
 
             {/* Budget */}
@@ -254,7 +264,7 @@ export function ContactModal() {
                   >{opt}</button>
                 ))}
               </div>
-              {errors.budget && <p className="font-inter text-xs text-red-400 mt-2">{errors.budget}</p>}
+              {errors.budget && <p data-error className="font-inter text-xs text-red-400 mt-2">{errors.budget}</p>}
             </fieldset>
 
             {/* Neighborhoods */}
@@ -270,7 +280,7 @@ export function ContactModal() {
                   >{opt}</button>
                 ))}
               </div>
-              {errors.neighborhoods && <p className="font-inter text-xs text-red-400 mt-2">{errors.neighborhoods}</p>}
+              {errors.neighborhoods && <p data-error className="font-inter text-xs text-red-400 mt-2">{errors.neighborhoods}</p>}
             </fieldset>
 
             {/* Lease length */}
@@ -286,7 +296,7 @@ export function ContactModal() {
                   >{opt}</button>
                 ))}
               </div>
-              {errors.leaseLength && <p className="font-inter text-xs text-red-400 mt-2">{errors.leaseLength}</p>}
+              {errors.leaseLength && <p data-error className="font-inter text-xs text-red-400 mt-2">{errors.leaseLength}</p>}
             </fieldset>
 
             {/* Notes */}
