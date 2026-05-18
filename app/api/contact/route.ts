@@ -16,7 +16,7 @@ export async function POST(req: Request) {
   const data = await req.json()
   const { firstName, lastName, email, phone, bedrooms, timeline, budget, neighborhoods, leaseLength, notes } = data
 
-  const { data, error } = await resend.emails.send({
+  const { data: sendResult, error } = await resend.emails.send({
     from: 'Elevated Website <onboarding@resend.dev>',
     to: LEAD_EMAIL,
     replyTo: email,
@@ -45,7 +45,7 @@ export async function POST(req: Request) {
     return Response.json({ success: false, error: error.message }, { status: 500 })
   }
 
-  console.log('Email sent:', data?.id)
+  console.log('Email sent:', sendResult?.id)
   return Response.json({ success: true })
 }
 
