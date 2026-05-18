@@ -8,6 +8,8 @@ export async function POST(req: Request) {
   const apiKey = process.env.RESEND_API_KEY
   const LEAD_EMAIL = process.env.LEAD_EMAIL ?? ''
 
+  console.log('Env check — RESEND_API_KEY present:', !!apiKey, '| LEAD_EMAIL:', LEAD_EMAIL)
+
   if (!apiKey || !LEAD_EMAIL) {
     return Response.json({ success: false, error: 'Email credentials not configured' }, { status: 500 })
   }
