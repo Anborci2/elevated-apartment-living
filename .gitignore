@@ -13,6 +13,11 @@
 # claude code internal files
 .claude/
 
+# sensitive setup files — never commit these
+ALAN-SETUP.txt
+ALAN-CREDENTIALS-STATUS.txt
+*.rtf
+
 # misc
 .DS_Store
 *.pem

@@ -228,9 +228,9 @@ WHAT IT DOES FOR YOU:
 
 SEND BLAIR: Your Google Cloud API Key
 
-google maps platform api key = AIzaSyDTDs6UEui1YgWT9jj1LVAwt2dykBrcAqY
+google maps platform api key = [REDACTED - stored in Vercel env vars]
 
-places api key = AIzaSyATfe9HBB9dfMVI2IJO8kLo8z2uvgohlDA
+places api key = [REDACTED - stored in Vercel env vars]
 
 Places ID = 
 
