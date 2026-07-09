@@ -29,6 +29,10 @@ export const metadata: Metadata = {
     'Denver\'s premier apartment locating service. Tell us what you\'re looking for — we handle the rest.',
 }
 
+// Re-fetch Sanity content (footer contact info + all pages below) hourly,
+// so edits published in the Studio go live without a redeploy
+export const revalidate = 3600
+
 export default function RootLayout({
   children,
 }: {

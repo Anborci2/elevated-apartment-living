@@ -6,6 +6,9 @@ import { AreasWeServe } from '@/components/sections/AreasWeServe'
 import { Reviews } from '@/components/sections/Reviews'
 import { ContactButton } from '@/components/ui/ContactButton'
 
+// Hero, Our Story, and Reviews pull from Sanity — refresh hourly
+export const revalidate = 3600
+
 export default function Home() {
   return (
     <main>

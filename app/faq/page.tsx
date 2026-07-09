@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     'Answers to common questions about our free Denver apartment locating service.',
 }
 
+// FAQs pull from Sanity — refresh hourly
+export const revalidate = 3600
+
 const FALLBACK_FAQS = [
   {
     question: 'Is this service really free?',
