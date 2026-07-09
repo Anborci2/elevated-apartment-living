@@ -1,0 +1,123 @@
+=====================================================
+  YOUR WEBSITE — HOW IT WORKS & HOW TO EDIT IT
+  Elevated Apartment Locating
+  For: Alan     Last updated: 2026-07-08
+=====================================================
+
+Everything is live and running. This is the only
+document you need day to day. No technical knowledge
+required.
+
+
+-----------------------------------------------------
+WHAT YOUR WEBSITE DOES FOR YOU
+-----------------------------------------------------
+1. IT'S LIVE 24/7
+   Your site is at:
+     www.elevatedapartmentlocating.com
+
+2. IT SENDS YOU LEADS
+   When someone fills out the contact form, you get
+   an email within seconds with all their details
+   (name, phone, budget, neighborhoods, timeline).
+   The email arrives in your inbox from:
+     leads@elevatedapartmentlocating.com
+   Just hit reply to respond directly to the client.
+
+3. YOU CAN EDIT IT YOURSELF
+   See the next section. Changes go live on their own.
+
+You don't have to do anything to keep it running.
+It just works.
+
+
+-----------------------------------------------------
+HOW TO EDIT YOUR SITE CONTENT
+-----------------------------------------------------
+You have a private dashboard called "the Studio."
+This is where you change the words and photos on
+your site.
+
+  YOUR STUDIO LINK (bookmark this!):
+    https://elevated-apartments.sanity.studio
+
+  HOW TO LOG IN:
+    Click "Continue with Google" and use your
+    business email (alan@elevatedapartmentlocating.com).
+    Always use the Google button — it's how your
+    account is set up.
+
+WHAT YOU CAN CHANGE:
+
+  SITE SETTINGS
+    - The big headline on the homepage
+    - The line under the headline
+    - Your contact email and phone number
+    - The large background photo (upload your own)
+
+  OUR STORY
+    - The four paragraphs about you and your service
+    - Your headshot photo (upload your own)
+
+  FAQ
+    - Add, edit, remove, or reorder questions
+      and answers
+
+  REVIEWS
+    - You can add client reviews here by hand
+    - (Automatic Google reviews come later — see below)
+
+
+-----------------------------------------------------
+HOW TO PUBLISH A CHANGE
+-----------------------------------------------------
+1. Open the Studio and log in
+2. Click the section you want to change
+3. Edit the text or upload a photo
+4. Click the "Publish" button (bottom of the screen)
+
+IMPORTANT: "Publish" means it goes live. Your change
+appears on the real website within about an hour.
+If you don't click Publish, nothing changes.
+
+Tip: make a small edit and check the site an hour
+later the first time, just so you see how it works.
+
+
+-----------------------------------------------------
+COMING LATER — AUTOMATIC GOOGLE REVIEWS
+-----------------------------------------------------
+Once your Google Business Profile is verified (the
+one where customers leave you Google reviews), we can
+switch on automatic reviews. After that, any new
+4 or 5 star Google review will show up in your Studio
+waiting for your approval — you click Publish and it
+appears on your site. Bad reviews never make it
+through. This part is not turned on yet; let Blair
+know when your Google profile is verified.
+
+
+-----------------------------------------------------
+WHAT YOU OWN
+-----------------------------------------------------
+Everything is under your own accounts. Nothing depends
+on Blair:
+
+  Domain (Cloudflare)  — your web address
+  Hosting (Vercel)     — keeps the site online
+  Code (GitHub)        — you own the site itself
+  Email (Resend)       — delivers your leads
+  Content (Sanity)     — the Studio you edit in
+
+Blair has helper access to the Studio only, so he can
+step in if you ever need a hand.
+
+
+-----------------------------------------------------
+IF SOMETHING LOOKS WRONG
+-----------------------------------------------------
+Text Blair. Don't try to fix technical things
+yourself — that's what the helper access is for.
+Editing your content in the Studio is always safe.
+
+=====================================================
