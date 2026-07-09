@@ -1,0 +1,21 @@
+{
+  "name": "elevated-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sanity Studio for Elevated Apartment Locating — Alan's content editing dashboard. Lives in its own package because Sanity v5 needs React 19 while the Next.js site uses React 18.",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sanity": "^5.21.0",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "typescript": "^5.9.3"
+  }
+}
