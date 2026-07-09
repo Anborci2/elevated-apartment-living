@@ -20,7 +20,7 @@ import { siteSettingsSchema } from './schemas/siteSettings'
 export default defineConfig({
   name: 'elevated',
   title: 'Elevated Apartment Locating',
-  projectId: 'jmh96ece',
+  projectId: 'ha3v40sb',
   dataset: 'production',
   plugins: [
     structureTool({
