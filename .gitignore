@@ -16,6 +16,7 @@
 # sensitive setup files — never commit these
 ALAN-SETUP.txt
 ALAN-CREDENTIALS-STATUS.txt
+FINAL-STEPS.txt
 *.rtf
 
 # misc
