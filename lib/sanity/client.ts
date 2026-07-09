@@ -1,7 +1,10 @@
 import { createClient, type SanityClient } from '@sanity/client'
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'production'
+// Env var names match Alan's Vercel config exactly (non-standard casing).
+// Safe without a NEXT_PUBLIC_ prefix because this client is only ever
+// used in server components, never shipped to the browser.
+const projectId = process.env.Sanity_Project_ID
+const dataset = process.env.Sanity_Dataset ?? 'production'
 
 export const sanityClient: SanityClient | null = projectId
   ? createClient({ projectId, dataset, apiVersion: '2024-01-01', useCdn: true })

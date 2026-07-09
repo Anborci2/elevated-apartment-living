@@ -1,12 +1,14 @@
 import { Resend } from 'resend'
 
 // -------------------------------------------------------
-// Requires RESEND_API_KEY and LEAD_EMAIL in .env.local
+// Requires resend_api_key and Lead_Email env vars.
+// NOTE: these names are intentionally non-standard to match
+// the exact variable names configured in Alan's Vercel.
 // -------------------------------------------------------
 
 export async function POST(req: Request) {
-  const apiKey = process.env.RESEND_API_KEY
-  const LEAD_EMAIL = process.env.LEAD_EMAIL ?? ''
+  const apiKey = process.env.resend_api_key
+  const LEAD_EMAIL = process.env.Lead_Email ?? ''
 
   console.log('Env check — RESEND_API_KEY present:', !!apiKey, '| LEAD_EMAIL:', LEAD_EMAIL)
 

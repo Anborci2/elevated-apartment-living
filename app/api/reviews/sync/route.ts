@@ -12,8 +12,8 @@ const MIN_RATING = 4
 
 export async function GET(req: Request) {
   const sanity = createClient({
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? '',
-    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'production',
+    projectId: process.env.Sanity_Project_ID ?? '',
+    dataset: process.env.Sanity_Dataset ?? 'production',
     apiVersion: '2024-01-01',
     token: process.env.SANITY_API_TOKEN,
     useCdn: false,
@@ -23,7 +23,7 @@ export async function GET(req: Request) {
     return Response.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const apiKey = process.env.GOOGLE_PLACES_API_KEY
+  const apiKey = process.env.Google_Places_API_Key
   const placeId = process.env.GOOGLE_PLACE_ID
 
   if (!apiKey || !placeId) {
