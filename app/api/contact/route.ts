@@ -10,8 +10,6 @@ export async function POST(req: Request) {
   const apiKey = process.env.resend_api_key
   const LEAD_EMAIL = process.env.Lead_Email ?? ''
 
-  console.log('Env check — RESEND_API_KEY present:', !!apiKey, '| LEAD_EMAIL:', LEAD_EMAIL)
-
   if (!apiKey || !LEAD_EMAIL) {
     return Response.json({ success: false, error: 'Email credentials not configured' }, { status: 500 })
   }
@@ -21,7 +19,7 @@ export async function POST(req: Request) {
   const { firstName, lastName, email, phone, bedrooms, timeline, budget, neighborhoods, leaseLength, notes } = data
 
   const { data: sendResult, error } = await resend.emails.send({
-    from: 'Elevated Website <onboarding@resend.dev>',
+    from: 'Elevated Apartment Locating <leads@elevatedapartmentlocating.com>',
     to: LEAD_EMAIL,
     replyTo: email,
     subject: `New lead: ${firstName} ${lastName}`,
@@ -57,6 +55,6 @@ function row(label: string, value: string) {
   return `
     <tr>
       <td style="padding:10px 0;border-bottom:1px solid rgba(201,169,110,0.2);color:#A8A29E;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;width:38%;">${label}</td>
-      <td style="padding:10px 0;border-bottom:1px solid rgba(201,169,110,0.2);font-size:14px;">${value || '—'}</td>
+      <td style="padding:10px 0;border-bottom:1px solid rgba(201,169,110,0.2);font-size:14px;">${value || 'Not provided'}</td>
     </tr>`
 }
